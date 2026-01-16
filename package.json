@@ -1,0 +1,20 @@
+{
+  "name": "photographs",
+  "version": "0.0.0",
+  "description": "Photographs taken by Maxi",
+  "homepage": "https://github.com/MaxiGarcia13/photographs#readme",
+  "bugs": {
+    "url": "https://github.com/MaxiGarcia13/photographs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxiGarcia13/photographs.git"
+  },
+  "license": "ISC",
+  "author": "Maximiliano Daniel Garcia Mortigliengo",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
