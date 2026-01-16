@@ -6,17 +6,8 @@ export default function Button({ children }) {
   return (
     <button
       onClick={() => setClicked(!clicked)}
-      style={{
-        padding: '0.75rem 1.5rem',
-        backgroundColor: clicked ? '#10b981' : '#3b82f6',
-        color: 'white',
-        border: 'none',
-        borderRadius: '0.5rem',
-        cursor: 'pointer',
-        fontSize: '1rem',
-        fontWeight: '500',
-        transition: 'background-color 0.2s',
-      }}
+      className={`px-6 py-3 rounded-lg text-white border-none cursor-pointer text-base font-medium transition-colors duration-200 ${clicked ? 'bg-emerald-500' : 'bg-blue-500'
+        }`}
     >
       {clicked ? 'Clicked!' : children}
     </button>
