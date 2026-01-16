@@ -6,12 +6,12 @@
   "bugs": {
     "url": "https://github.com/MaxiGarcia13/photographs/issues"
   },
+  "license": "ISC",
+  "author": "Maximiliano Daniel Garcia Mortigliengo",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MaxiGarcia13/photographs.git"
   },
-  "license": "ISC",
-  "author": "Maximiliano Daniel Garcia Mortigliengo",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
@@ -19,12 +19,20 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
     "astro": "^5.16.10",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.24.0",
+    "oxlint": "^1.39.0"
   }
 }

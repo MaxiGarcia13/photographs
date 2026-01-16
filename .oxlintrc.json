@@ -1,0 +1,47 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "style": "warn",
+    "pedantic": "off"
+  },
+  "rules": {
+    "eslint/max-len": [
+      "error",
+      {
+        "code": 100,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "eslint/indent": ["error", 2],
+    "eslint/id-length": "off",
+    "eslint/no-ternary": "off",
+    "eslint/sort-keys": "off",
+    "eslint/sort-imports": "off",
+    "eslint/capitalized-comments": "off",
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-fragments": "error",
+    "react/jsx-curly-brace-presence": [
+      "error",
+      {
+        "props": "never",
+        "children": "never",
+        "propElementValues": "always"
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "typescript-eslint/triple-slash-reference": "off",
+    "typescript-eslint/array-type": "off",
+    "typescript-eslint/consistent-indexed-object-style": "off",
+    "typescript-eslint/consistent-type-definitions": "off",
+    "typescript-eslint/consistent-type-imports": "off"
+  },
+  "ignorePatterns": [".astro/**"]
+}
